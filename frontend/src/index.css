@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #060A12;
+    color: #F8FAFC;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1120;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2F52;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00FF87;
+}
+
+/* Glassmorphism */
+.glass-card {
+  background: rgba(17, 26, 46, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card-elevated {
+  background: rgba(22, 34, 59, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 135, 0.2);
+}
+
+.glass-card-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 255, 135, 0.12), transparent 70%), rgba(17, 26, 46, 0.8);
+  border: 1px solid rgba(0, 255, 135, 0.25);
+  box-shadow: 0 0 30px rgba(0, 255, 135, 0.1);
+}
+
+.glass-card-danger {
+  background: radial-gradient(circle at 50% 0%, rgba(239, 68, 68, 0.15), transparent 70%), rgba(17, 26, 46, 0.8);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.15);
+}
+
+/* Neon glow texts */
+.text-neon {
+  color: #00FF87;
+  text-shadow: 0 0 12px rgba(0, 255, 135, 0.5);
+}
+
+.text-neon-danger {
+  color: #EF4444;
+  text-shadow: 0 0 12px rgba(239, 68, 68, 0.5);
+}
+
+/* Range input styling */
+input[type="range"] {
+  accent-color: #00FF87;
+}

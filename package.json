@@ -1,0 +1,13 @@
+{
+  "name": "dailymint-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DailyMint: Premium AI-Powered Personal Finance & Daily Budget Tracker",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build"
+  }
+}
